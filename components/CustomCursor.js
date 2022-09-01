@@ -8,7 +8,8 @@ const CustomCursor = (props) => {
     useEffect(() => {
       let mouseCursor = document.querySelector("#cursor");
       let links = document.getElementsByTagName('a');
-
+      let toggler = document.getElementById("toggler")
+    
       //allows for all links to make custom cursor dialate
       for(let i = 0;i < links.length; i++) {
         links[i].addEventListener('mouseover', () => {
@@ -21,6 +22,15 @@ const CustomCursor = (props) => {
           links[i].style.transform = 'opacity(1)'
         })
       }
+
+      //Dialates cursor on hover
+      toggler.addEventListener('mouseover', () => {
+        mouseCursor.style.transform = 'scale(2)';
+      })
+
+      toggler.addEventListener('mouseleave', () => {
+        mouseCursor.style.transform = 'scale(1)';
+      })
 
       //Disables cursor on mobile
       document.addEventListener('touchstart', () => {
