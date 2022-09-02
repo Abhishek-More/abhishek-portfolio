@@ -11,7 +11,7 @@ export default function NowPlaying() {
 
   return (
     <div className="flex sm:hidden justify-center pt-4">
-        <a href={data?.songUrl} className="blend opacity-50 text-sm">{data?.title} // {data?.artist}</a>
+        <a href={data?.songUrl} className="blend opacity-50 text-sm">{data?.title} \\ {data?.artist}</a>
     </div>
   )
 }
