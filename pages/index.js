@@ -3,7 +3,7 @@ import Heading from "../components/Heading"
 import HeadingMobile from "../components/HeadingMobile"
 import LinksDesktop from "../components/LinksDesktop"
 import LinksGrid from "../components/LinksGrid"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 
 export default function Home() {

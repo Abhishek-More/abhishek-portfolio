@@ -7,6 +7,6 @@ export default function LinksDesktop() {
         <a className="text-3xl font-bold blend" href="https://github.com/Abhishek-More" target="_blank" rel="noopener noreferrer">Github &rarr;</a>
         <a className="text-3xl font-bold blend" href="https://www.linkedin.com/in/abhishek-more-linked" target="_blank" rel="noopener noreferrer">LinkedIn &rarr;</a>
         <a className="text-3xl font-bold blend" href="https://devpost.com/AbhishekMore" target="_blank" rel="noopener noreferrer">Devpost &rarr;</a>
-    i/div>
+    </div>
   )
 }

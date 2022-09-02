@@ -5,17 +5,16 @@ export default function HeadingMobile() {
   return (
     <div className="flex sm:hidden justify-center pt-[10vh]">
       <h1 className="text-[40px] lg:text-[70px] font-bold w-[80%]">
-        <span className="blend">hi, i&apos;m </span>
-        <br />
+        <span className="blend">hi, i&apos;m</span>
         <a className="redtext" href="https://www.linkedin.com/in/abhishek-more-linked" target="_blank" rel="noopener noreferrer">
           <span>abhishek more</span>
         </a>
-
         <div className="">
         <Typewriter
           options={{
             strings: ['tamuhack director', 'tech bro', 'skater boi'],
             wrapperClassName: "text-2xl blend",
+            cursorClassName: "invisible",
             autoStart: true,
             loop: true,
           }}
