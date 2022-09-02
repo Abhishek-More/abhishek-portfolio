@@ -1,0 +1,10 @@
+export const RESUME_LINK = "https://firebasestorage.googleapis.com/v0/b/asciify-a4fba.appspot.com/o/Abhishek%20More%20Resume.pdf?alt=media&token=84cf5ee1-8480-4338-a511-bb9be33bbeed"
+export const GITHUB_LINK = "https://github.com/Abhishek-More"
+export const LINKEDIN_LINK = "https://www.linkedin.com/in/abhishek-more-linked"
+export const DEVPOST_LINK = "https://devpost.com/AbhishekMore"
+export const TAMUHACK_LINK = "https://tamuhack.com"
+
+export const NAME = "Abhishek More"
+export const MOBILE_NAME = "abhishek more"
+
+export const MOBILE_CHARACTERIZATIONS = ['tamuhack director', 'tech bro', 'skater boi']

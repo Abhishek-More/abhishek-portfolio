@@ -4,6 +4,7 @@ import HeadingMobile from "../components/HeadingMobile"
 import LinksDesktop from "../components/LinksDesktop"
 import LinksGrid from "../components/LinksGrid"
 import { useState, useEffect } from "react"
+import NowPlaying from "../components/NowPlaying"
 
 
 export default function Home() {
@@ -33,6 +34,8 @@ export default function Home() {
 
     <LinksDesktop  />
     <LinksGrid />
+
+    <NowPlaying />
 
     <CustomCursor dark={isDark} />
   </div>
