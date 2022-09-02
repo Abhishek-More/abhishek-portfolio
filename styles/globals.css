@@ -23,6 +23,7 @@ a {
 
 .blend {
   mix-blend-mode: difference;
+  color: white;
 }
 
 .redtext {

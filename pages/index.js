@@ -10,6 +10,18 @@ import NowPlaying from "../components/NowPlaying"
 export default function Home() {
   const [isDark, setDark] = useState(false)
 
+  useEffect(() => {
+    if(localStorage.getItem('isDark') == 'true') {
+      let toggler = document.getElementById('toggler')
+      let darkMode = document.getElementById('darkmode') 
+
+      toggler.classList.add('active')
+      darkMode.classList.add('active')
+      setDark(true)
+    }
+  }, [])
+  
+
   function toggleColor() {
     let toggler = document.getElementById('toggler')
     let darkMode = document.getElementById('darkmode')
@@ -18,6 +30,7 @@ export default function Home() {
     darkMode.classList.toggle('active')    
 
     setDark(!isDark)
+    localStorage.setItem('isDark', JSON.stringify(!isDark))
   }
 
   return (
