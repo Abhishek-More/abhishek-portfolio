@@ -6,6 +6,7 @@ export default function HeadingMobile() {
     <div className="flex sm:hidden justify-center pt-[10vh]">
       <h1 className="text-[40px] lg:text-[70px] font-bold w-[80%]">
         <span className="blend">hi, i&apos;m</span>
+        <br />
         <a className="redtext" href="https://www.linkedin.com/in/abhishek-more-linked" target="_blank" rel="noopener noreferrer">
           <span>abhishek more</span>
         </a>
