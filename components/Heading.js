@@ -7,7 +7,6 @@ export default function Heading() {
       <h1 className="text-[40px] lg:text-[70px] font-bold w-[65%] lg:w-[75%] xl:w-[65%]">
         <span className="blend">I&apos;m </span>
         <a href={LINKEDIN_LINK} className="headerlink" target="_blank" rel="noopener noreferrer">
-          <div className="highlight"></div>
           <span className="redtext">Abhishek More</span>
         </a>
         <span className="blend">
