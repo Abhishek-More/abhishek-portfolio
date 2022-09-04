@@ -4,7 +4,7 @@ import { FaSpotify } from 'react-icons/fa'
 
 export default function NowPlaying() {
   const fetcher = (url) => fetch(url).then((r) => r.json());
-  const { data } = useSWR('/api/spotify', fetcher);
+  const { data } = useSWR('/api/spotify', fetcher, { refreshInterval: 1000 });
 
   if(!data?.isPlaying) {
     return <></>
