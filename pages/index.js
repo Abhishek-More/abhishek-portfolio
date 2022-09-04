@@ -1,4 +1,5 @@
 import CustomCursor from "../components/CustomCursor"
+import Head from "next/head"
 import Heading from "../components/Heading"
 import HeadingMobile from "../components/HeadingMobile"
 import LinksDesktop from "../components/LinksDesktop"
@@ -35,6 +36,10 @@ export default function Home() {
 
   return (
   <div className="h-screen overflow-hidden overflow-y-hidden max-w-screen">
+    <Head>
+      <title>Abhishek More</title>
+      <link rel="icon" href="/favicon.png" />
+    </Head>
     <div>
         <div id="toggler" className="toggler" onClick={toggleColor}></div>
         <div id="container" className="container">
