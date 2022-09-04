@@ -1,6 +1,5 @@
 
-const NOW_PLAYING_ENDPOINT = `https://api.spotify.com/v1/me/player/currently-playing`;
-const TOKEN_ENDPOINT = "https://accounts.spotify.com/api/token"
+import { TOKEN_ENDPOINT, NOW_PLAYING_ENDPOINT } from "../../utils/Constants";
 
 const getAccessToken = async () => {
     const refresh_token = process.env.SPOTIFY_REFRESH_TOKEN;

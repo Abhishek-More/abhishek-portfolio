@@ -1,13 +1,4 @@
-.cursor {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  position: absolute;
-  transform: translate(-50%,-50%);
-  pointer-events: none;
-  transition: all 0.3s ease;
-  transition-property: background, transform;
-}
+
 
 .link-grow {
   width: 40px;

@@ -8,3 +8,6 @@ export const NAME = "Abhishek More"
 export const MOBILE_NAME = "abhishek more"
 
 export const MOBILE_CHARACTERIZATIONS = ['tamuhack director', 'tech bro', 'skater boi']
+
+export const NOW_PLAYING_ENDPOINT = `https://api.spotify.com/v1/me/player/currently-playing`;
+export const TOKEN_ENDPOINT = "https://accounts.spotify.com/api/token"

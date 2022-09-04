@@ -48,18 +48,13 @@ const CustomCursor = (props) => {
         mouseCursor.style.left = e.pageX - 20 + 'px';
       });
 
-      //TODO: attempt at click animation
-      document.addEventListener('click', () => {
-        mouseCursor.classList.add("expand");
-      })
-
       return () => {
         document.removeEventListener('mousemove', cursor);
       }
     })
 
     return (
-        <div className={styles.cursor} id='cursor'></div>
+        <div className="cursor" id='cursor'></div>
     )
 }
 

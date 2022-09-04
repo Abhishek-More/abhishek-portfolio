@@ -37,6 +37,27 @@ a {
   cursor: none;
 }
 
+.cursor {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transition-property: background, transform;
+}
+
+.cursor.active {
+  animation: pulse 0.2s 2 ease-out;
+}
+
+@keyframes pulse {
+  0%   {scale: 1}
+  50% {scale: 0.6}
+  100%   {scale: 1}
+}
+
 .toggler {
   position: absolute;
   background-color: black;
