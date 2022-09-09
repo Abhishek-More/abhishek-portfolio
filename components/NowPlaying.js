@@ -15,9 +15,9 @@ export default function NowPlaying() {
       <div className="flex sm:hidden justify-center pt-4">
           <a href={data?.songUrl} className="blend opacity-50 text-sm">{data?.title.toLowerCase()} \\ {data?.artist.toLowerCase()}</a>
       </div>
-      <div className="flex sm:hidden justify-center items-center pt-4 ">
+      <div className="flex sm:hidden justify-center items-center pt-3">
         <FaSpotify className="blend opacity-50" />
-        <p className="text-xs opacity-50 ml-2">Now Playing</p>
+        <p className="text-xs opacity-50 ml-2">now playing</p>
       </div>
     </div>
   )
