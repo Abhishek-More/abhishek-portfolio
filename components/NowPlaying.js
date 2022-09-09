@@ -17,7 +17,7 @@ export default function NowPlaying() {
       </div>
       <div className="flex sm:hidden justify-center items-center pt-3">
         <FaSpotify className="blend opacity-50" />
-        <p className="text-xs opacity-50 ml-2">now playing</p>
+        <p className="text-xs opacity-50 ml-2 blend">now playing</p>
       </div>
     </div>
   )

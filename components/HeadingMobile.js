@@ -9,7 +9,7 @@ export default function HeadingMobile() {
       <h1 className="text-[40px] lg:text-[70px] font-bold w-[80%] ">
         <span className="blend">hi, i&apos;m</span>
         <br />
-        <a className="redtext" href={LINKEDIN_LINK} target="_blank" rel="noopener noreferrer">
+        <a className="gradient blend" href={LINKEDIN_LINK} target="_blank" rel="noopener noreferrer">
           <span>{MOBILE_NAME}</span>
         </a>
         <div className="">
