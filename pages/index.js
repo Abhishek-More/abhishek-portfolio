@@ -7,11 +7,12 @@ import LinksGrid from "../components/LinksGrid"
 import { useState, useEffect } from "react"
 import NowPlaying from "../components/NowPlaying"
 
-
 export default function Home() {
   const [isDark, setDark] = useState(false)
+  const [currentIndex, setCurrentIndex] = useState(3)
 
   useEffect(() => {
+    
     if(localStorage.getItem('isDark') == 'true') {
       let toggler = document.getElementById('toggler')
       let darkMode = document.getElementById('darkmode') 
@@ -20,8 +21,12 @@ export default function Home() {
       darkMode.classList.add('active')
       setDark(true)
     }
+
   }, [])
-  
+
+  function keyPressHandler(event) {
+    console.log(event.key)
+  }
 
   function toggleColor() {
     let toggler = document.getElementById('toggler')
@@ -50,7 +55,7 @@ export default function Home() {
     <Heading />
     <HeadingMobile />
 
-    <LinksDesktop  />
+    <LinksDesktop currentIndex={currentIndex} />
     <LinksGrid />
 
     <NowPlaying />

@@ -3,7 +3,7 @@ import { DEVPOST_LINK, GITHUB_LINK, LINKEDIN_LINK, RESUME_LINK } from '../utils/
 
 export default function LinksGrid() {
   return (
-    <div className="flex flex-col sm:flex sm:flex-row lg:hidden justify-center w-[80%] md:w-[65%] m-auto pt-10 sm:pt-20">
+    <div className="flex flex-col sm:flex sm:flex-row lg:hidden justify-center w-[80%] md:w-[65%] m-auto pt-10 px-2 sm:px-0 sm:pt-20">
         <div className="px-0 sm:px-8">
             <div className="py-3">
               <a className="hidden sm:block text-2xl sm:text-3xl lg:text-3xl font-bold blend" href={RESUME_LINK} target="_blank" rel="noopener noreferrer">Resume &rarr;</a>

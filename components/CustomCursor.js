@@ -3,6 +3,8 @@ import { useEffect } from 'react';
 import styles from '../styles/Home.module.css'
 import '../styles/Home.module.css'
 
+import { motion } from "framer-motion"
+
 const CustomCursor = (props) => {
 
     useEffect(() => {
@@ -54,7 +56,7 @@ const CustomCursor = (props) => {
     })
 
     return (
-        <div className="cursor" id='cursor'></div>
+        <motion.div whileTap={{scale: 0.5}} className="cursor" id='cursor'></motion.div>
     )
 }
 

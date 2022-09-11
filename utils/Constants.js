@@ -3,6 +3,7 @@ export const GITHUB_LINK = "https://github.com/Abhishek-More"
 export const LINKEDIN_LINK = "https://www.linkedin.com/in/abhishek-more-linked"
 export const DEVPOST_LINK = "https://devpost.com/AbhishekMore"
 export const TAMUHACK_LINK = "https://tamuhack.com"
+export const EMAIL = "abhishekmore@tamu.edu"
 
 export const NAME = "Abhishek More"
 export const MOBILE_NAME = "abhishek more"
