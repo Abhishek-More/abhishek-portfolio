@@ -24,7 +24,7 @@ export default function Heading() {
   }
 
   function setStyle() {
-    if(styleNum == 2) {
+    if(styleNum == 3) {
       setStyleNum(0)
     } else {
       setStyleNum(styleNum+1)
@@ -33,11 +33,13 @@ export default function Heading() {
 
   function getStyle() {
     if(styleNum == 0) {
-      return "visible lg:p-2 rounded-xl"
+      return "visible lg:p-2 rounded-xl border-2 border-white"
     } else if(styleNum == 1) {
-      return "visible lg:bg-purple-50 lg:p-2 rounded-xl"
+      return "visible lg:bg-purple-50 lg:px-2 lg:py-1 rounded-xl border-2 border-pink-600"
+    } else if(styleNum == 2) {
+      return "gradient lg:p-[10px] blend"
     } else {
-      return "gradient lg:p-2 blend"
+      return "visible lg:bg-purple-50 border-2 border-white blend lg:px-2 lg:py-1 rounded-xl" 
     }
   } 
 
