@@ -54,7 +54,7 @@ export default function Heading() {
         <a className={`${getStyle()}`}>
           <span onClick={() => copyToClipboard()} className="visible redtext blend">Abhishek </span>
           <div onClick={() => setStyle()} className="inline-block rounded-xl">
-            <span className="redtext">More</span>
+            <span className="redtext w-[4ch]">{styleNum == 3 ? "Less " : "More"}</span>
           </div>
         </a>
         <span className="blend">
