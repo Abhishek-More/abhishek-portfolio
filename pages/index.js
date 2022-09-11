@@ -12,6 +12,12 @@ export default function Home() {
   const [currentIndex, setCurrentIndex] = useState(3)
 
   useEffect(() => {
+
+    const disableselect = (e) => {  
+      return false  
+    }  
+    document.onselectstart = disableselect  
+    document.onmousedown = disableselect
     
     if(localStorage.getItem('isDark') == 'true') {
       let toggler = document.getElementById('toggler')
