@@ -52,11 +52,11 @@ export default function Home() {
         description: 'Personal Website for Abhishek More',
         images: [
           {
-            url: 'https://images.pexels.com/photos/11427599/pexels-photo-11427599.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+            url: '/sitesc.png ',
             width: 800,
             height: 600,
             alt: 'Og Image Alt',
-            type: 'image/jpeg',
+            type: 'image/png',
           },
         ],
         site_name: 'SiteName',
