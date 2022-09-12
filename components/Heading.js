@@ -1,7 +1,6 @@
 import React from 'react'
 import { GITHUB_LINK, TAMUHACK_LINK, EMAIL} from '../utils/Constants'
 import { useToast } from '@chakra-ui/react'
-import { CgMoreO } from 'react-icons/cg'
 import { useState } from "react"
 
 export default function Heading() {
@@ -35,11 +34,11 @@ export default function Heading() {
     if(styleNum == 0) {
       return "visible lg:p-2 rounded-xl border-2 border-white"
     } else if(styleNum == 1) {
-      return "visible lg:bg-purple-50 lg:px-2 lg:py-1 rounded-xl border-2 border-pink-600"
+      return "visible lg:bg-purple-50 lg:px-2 rounded-xl border-2 border-pink-600"
     } else if(styleNum == 2) {
       return "gradient lg:p-[10px] blend"
     } else {
-      return "visible lg:bg-purple-50 border-2 border-white blend lg:px-2 lg:py-1 rounded-xl" 
+      return "visible lg:bg-purple-50 border-2 border-white blend lg:px-2 rounded-xl" 
     }
   } 
 

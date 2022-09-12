@@ -6,10 +6,10 @@ import LinksDesktop from "../components/LinksDesktop"
 import LinksGrid from "../components/LinksGrid"
 import { useState, useEffect } from "react"
 import NowPlaying from "../components/NowPlaying"
+import { NextSeo } from "next-seo"
 
 export default function Home() {
   const [isDark, setDark] = useState(false)
-  const [currentIndex, setCurrentIndex] = useState(3)
 
   useEffect(() => {
 
@@ -30,10 +30,6 @@ export default function Home() {
 
   }, [])
 
-  function keyPressHandler(event) {
-    console.log(event.key)
-  }
-
   function toggleColor() {
     let toggler = document.getElementById('toggler')
     let darkMode = document.getElementById('darkmode')
@@ -47,6 +43,25 @@ export default function Home() {
 
   return (
   <div className="h-screen overflow-hidden overflow-y-hidden max-w-screen">
+    <NextSeo
+      title="Abhishek More Personal Website"
+      description="Personal Website for Abhishek More"
+      openGraph={{
+        url: 'https://www.abhishekmore.com',
+        title: 'Abhishek More',
+        description: 'Personal Website for Abhishek More',
+        images: [
+          {
+            url: 'https://images.pexels.com/photos/11427599/pexels-photo-11427599.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+            width: 800,
+            height: 600,
+            alt: 'Og Image Alt',
+            type: 'image/jpeg',
+          },
+        ],
+        site_name: 'SiteName',
+      }}
+    />
     <Head>
       <title>Abhishek More</title>
       <link rel="icon" href="/favicon.png" />
@@ -61,7 +76,7 @@ export default function Home() {
     <Heading />
     <HeadingMobile />
 
-    <LinksDesktop currentIndex={currentIndex} />
+    <LinksDesktop />
     <LinksGrid />
 
     <NowPlaying />
