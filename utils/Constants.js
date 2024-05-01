@@ -1,4 +1,4 @@
-export const RESUME_LINK = "https://firebasestorage.googleapis.com/v0/b/asciify-a4fba.appspot.com/o/Abhishek%20More%20Resume%20September%202022.pdf?alt=media&token=d1818c17-9989-4ba0-8d5a-0a077cb96faa"
+export const RESUME_LINK = "https://firebasestorage.googleapis.com/v0/b/asciify-a4fba.appspot.com/o/Abhishek%20More%20Resume.pdf?alt=media&token=612342c0-9664-41ce-beb2-b4265b20002b"
 export const GITHUB_LINK = "https://github.com/Abhishek-More"
 export const LINKEDIN_LINK = "https://www.linkedin.com/in/abhishek-more-linked"
 export const DEVPOST_LINK = "https://devpost.com/AbhishekMore"
